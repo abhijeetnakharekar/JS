@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="name"></p>
+	<button onclick="asc()">click here</button>
+
+	<script type="text/javascript">
+		var arr=[1,2,24,13,7,9,56,4,6,8];
+		document.getElementById('name').innerHTML=arr;
+		function asc() 
+		{
+			arr.sort(function(a,b){return a - b});
+			document.getElementById('name').innerHTML=arr;
+		}
+	</script>
+
+</body>
+</html>
