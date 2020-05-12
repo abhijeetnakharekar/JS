@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="name"></p>
+	<button onclick="desc()">click here</button>
+	<script type="text/javascript">
+		var arr=["Berlin","Helsinki","Professor","Rio","Nairobi"];
+          document.getElementById('name').innerHTML=arr;
+		function desc() 
+		{
+			arr.sort();
+			arr.reverse();
+			document.getElementById('name').innerHTML=arr;
+		}
+	</script>
+
+</body>
+</html>
