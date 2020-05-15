@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="name"></p>
+	enter name1
+	<input type="text" id="name1">
+	enter cash
+	<input type="text" id="name2"><br><br>
+	enter name2
+	<input type="text" id="name3">
+	enter cash
+	<input type="text" id="name4"><br><br>
+	<button align="center" onclick="ans(name1.value,name2.value,name3.value,name4.value)">get balance</button>
+	<script type="text/javascript">
+		
+		class account
+		{
+			constructor(name,balance)
+			{
+				
+				this.name=name;
+				this.balance=balance;
+			}
+			deposite(cash)
+			{
+                return this.balance=this.balance + parseInt(cash);
+
+			}
+			display()
+			{
+				document.write(this.name+" ", this.balance+"    ");
+
+		    }
+		}
+		function ans(person1,cash1,person2,cash2) 
+		{
+		m1 = new account(person1,500);
+		m1.deposite(cash1);
+		m1.display();
+	    
+	    	m2 = new account(person2,1000);
+	    	m2.deposite(cash2);
+	    	m2.display();
+	    }
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="name"></p>
+		<p id="name1"></p>
+		<input type="text" id="name2">
+		<button onclick="ans(name2.value)">click for square & cube</button>
+	<script type="text/javascript">
+		
+		class math
+		{
+			constructor(num)
+			{
+				this.num=num;
+			}
+			static sqr(a)
+			{
+             return a.num*a.num;
+			}
+			static cube(a)
+			{
+              return a.num*a.num*a.num;
+			}
+
+		}
+		function ans(num) 
+		{
+		m1=new math(num);
+		document.getElementById('name').innerHTML="square is "+math.sqr(m1);
+
+		document.getElementById('name1').innerHTML="cube is "+math.cube(m1);
+	             }
+	</script>
+
+</body>
+</html>
