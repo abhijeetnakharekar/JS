@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<fieldset>
+		<legend align="center">JS form</legend>
+	<form align="center" method="post" action="submit.html" onsubmit="return(check())">
+	user id
+	<input type="text" id="name1" required><br><br>
+	password
+    <input type="password" id="pass" required><br><br>
+    mobile
+    <input type="number" id="mob" required><br><br>
+    address
+    <textarea rows="5" cols="10" required></textarea><br><br>
+    age
+    <input type="number" id="vay" required><br><br>
+    <input type="submit">
+    </form>
+    </fieldset>
+	
+	<script type="text/javascript">
+		function check()
+		 {
+		 	 
+			if(name1.value.length < 3 || name1.value.length > 15)
+			{
+				alert("invalid userid");
+				return false;
+			}
+			if(pass.value.length < 8)
+			{
+				alert("invalid password");
+				return false;
+			}
+			if (mob.value.length < 10 || mob.value.length >10 )
+			{
+				alert("invalid mobile");
+				return false;
+			}
+			if (vay.value < 18 || vay.value > 100)
+			{
+
+				alert("invalid age");
+				return false;
+			}
+			return (true);
+			
+		}
+
+	</script>
+
+</body>
+</html>
