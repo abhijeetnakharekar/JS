@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+</head>
+<body>
+	<p id="name"></p>
+<script type="text/javascript">
+	class student
+	{
+		set myroll(rollno)
+		{
+			this.rollno=rollno;
+		}
+		set myname(name)
+		{
+			this.name=name;
+		}
+		set mymarks1(marks1)
+		{
+			this.marks1=marks1;
+		}
+		set mymarks2(marks2)
+		{
+			this.marks2=marks2;
+		}
+		set mymarks3(marks3)
+		{
+			this.marks3=marks3;
+		}
+		get mytotal()
+		{
+			return this.total=this.marks1 + this.marks2 + this.marks3;
+		}
+		get myprcnt()
+		{
+			return this.total/300*100 ;
+		}
+		get myroll()
+		{
+			return this.rollno;
+		}
+		get myname()
+		{
+			return this.name;
+		}
+		get mymarks1()
+		{
+			return this.marks1;
+		}
+		get mymarks2()
+		{
+			return this.marks2;
+		}
+		get mymarks3()
+		{
+			return this.marks3;
+		}
+
+	}
+    
+     m1=new student();
+     m1.myroll=15;
+     m1.myname="abhi";
+     m1.mymarks1=80;
+     m1.mymarks2=50;
+     m1.mymarks3=90;
+     document.getElementById('name').innerHTML="RollNo :" +m1.myroll + "<br>" + "Name :" + m1.myname + "<br> " + "Marks1 :" + m1.mymarks1 + "<br> " + "Marks2 :"  + m1.mymarks2 +"<br> "+ "Marks3 :" +m1.mymarks3+"<br> " + "Total :"+m1.mytotal+" <br>" +"Percentage :"+ m1.myprcnt;
+
+</script>
+</body>
+</html>
