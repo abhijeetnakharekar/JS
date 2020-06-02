@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="name">
+<span id="name1"></span>
+<button onclick="eror()">click</button>
+<script type="text/javascript">
+
+	function eror() 
+	{
+		var a=document.getElementById('name').value;
+		if (a == 0) 
+          alert('error');
+      else
+		document.getElementById('name1').innerHTML=document.getElementById('name').value;
+	}
+</script>
+</body>
+</html>

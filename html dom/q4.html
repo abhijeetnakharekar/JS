@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	enter name
+	<input type="text" id="name"><br><br>
+	blue
+	<input type="radio" name="abc" id="name1" ><br><br>
+	red
+	<input type="radio" name="abc" id="name2"><br><br>
+	green
+	<input type="radio" name="abc" id="name3"><br><br>
+	<button onclick="change()">click here</button>
+	<script type="text/javascript">
+		function change()
+		 {
+		 	var a= document.getElementById('name');
+			if(document.getElementById('name1').checked)
+			{
+				a.style.color='blue';
+			}
+			else if (document.getElementById('name2').checked)
+		{
+			a.style.color = "red";
+			
+		}
+		else if (document.getElementById('name3').checked)
+		{
+			a.style.color = "green";
+			
+		}
+		}	
+	
+	</script>
+
+</body>
+</html>

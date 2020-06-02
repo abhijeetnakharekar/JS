@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+     <p id="name1" >abhijeet</p>
+     <p id="name2" >shriram</p>
+     <p id="name3" >nakharekar</p>
+     <h1 id="no"><h1>
+     <button onclick="count()">click here</button>
+     <script type="text/javascript">
+     	var a=document.getElementsByTagName('p');
+     	function count() 
+     	{
+     		document.getElementById('no').innerHTML=a.length;
+     	}
+     	for(var i=0;i < a.length;i++)
+     	{
+           a[i].style.background='blue';
+     	}
+     </script>
+</body>
+</html>

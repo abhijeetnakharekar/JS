@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="frm">
+	 C 100
+     <input type="checkbox" id="c" value="100">
+     JAVA 200
+     <input type="checkbox" id="java" value="200">
+     C++ 500
+     <input type="checkbox" id="c++" value="500"><br><br>
+     </form>
+     <input type="text" id="name">
+     <button onclick="add()">click</button>
+     <script type="text/javascript">
+     	function add() 
+     	{
+     	   var a= document.getElementById('frm').length;
+     	   
+     	   var sum=0;
+     	   for(var i=0;i<a;i++)
+     	   {
+     	   	if(frm[i].checked)
+     	   		 sum=sum + parseInt(frm[i].value);
+     	   }
+     	   document.getElementById('name').value=sum;
+     	}
+     </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Enter text
+<input type="text" id="name" onchange="spn()">
+<span id = "sp"></span>
+<script type="text/javascript">
+	function spn()
+	 {
+		document.getElementById('sp').innerHTML=document.getElementById('name').value;
+	}
+</script>
+</body>
+</html>
